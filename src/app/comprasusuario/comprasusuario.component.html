@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">idCubo</th>
+        <th scope="col">idPedido</th>
+        <th scope="col">idUsuario</th>
+        <th scope="col">Fecha Pedido</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let compra of compras" >
+        <th>{{ compra.idCubo }}</th>
+        <td>{{ compra.idPedido }}</td>
+        <td>{{ compra.idUsuario }}</td>
+        <td>{{ compra.fechaPedido }}</td>
+      </tr>
+    </tbody>
+  </table>
